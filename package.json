@@ -1,27 +1,46 @@
 {
-  "name": "svelte-app",
-  "version": "1.0.0",
-  "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
-    "start": "sirv public"
-  },
-  "devDependencies": {
-    "@rollup/plugin-commonjs": "11.0.2",
-    "@rollup/plugin-node-resolve": "^7.0.0",
-    "eslint": "^6.8.0",
-    "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
-    "rollup": "^1.20.0",
-    "rollup-plugin-livereload": "^1.0.0",
-    "rollup-plugin-svelte": "^5.0.3",
-    "rollup-plugin-terser": "^5.1.2",
-    "svelte": "^3.0.0"
-  },
-  "dependencies": {
-    "sirv-cli": "^0.4.4"
-  }
+	"name": "pets-care",
+	"version": "1.0.0",
+	"author": "JhOn Achata Limachi <jhonal183@gmail.com>",
+	"description": "Pets care project with svelte store and event dispatch",
+	"homepage": "https://dcyar.github.io/pets-care/",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/dcyar/pets-care.git"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/dcyar/pets-care/issues"
+	},
+	"keywords": [
+		"Javascript",
+		"Svelte",
+		"store",
+		"dispatch events"
+	],
+	"scripts": {
+		"build": "rollup -c",
+		"dev": "rollup -c -w",
+		"start": "sirv public",
+		"deploy": "yarn build && gh-pages -d public -b master"
+	},
+	"devDependencies": {
+		"@rollup/plugin-commonjs": "11.0.2",
+		"@rollup/plugin-node-resolve": "^7.0.0",
+		"eslint": "^6.8.0",
+		"eslint-config-standard": "^14.1.1",
+		"eslint-plugin-import": "^2.20.2",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-promise": "^4.2.1",
+		"eslint-plugin-standard": "^4.0.1",
+		"gh-pages": "^2.2.0",
+		"rollup": "^1.20.0",
+		"rollup-plugin-livereload": "^1.0.0",
+		"rollup-plugin-svelte": "^5.0.3",
+		"rollup-plugin-terser": "^5.1.2",
+		"svelte": "^3.0.0"
+	},
+	"dependencies": {
+		"sirv-cli": "^0.4.4"
+	}
 }
