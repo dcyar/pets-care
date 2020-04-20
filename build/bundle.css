@@ -1,0 +1,5 @@
+.container.svelte-18hp61c{text-align:center;padding:1em;width:90vw}.wrap.svelte-18hp61c{display:grid;grid-template-columns:repeat(2, 1fr);column-gap:10px;margin-top:40px}h1.svelte-18hp61c{color:#ff3e00;text-transform:uppercase;font-size:4em;font-weight:100;margin:0}@media(max-width: 980px){.wrap.svelte-18hp61c{grid-template-columns:1fr}}
+.form-control.svelte-vfut7{width:100%;background-color:transparent;color:#eee}
+.pet.svelte-12ds5y.svelte-12ds5y{border:1px solid #eee;text-align:left;padding:5px 10px;margin-bottom:10px;display:grid;grid-template-columns:2fr 1fr}.pet.svelte-12ds5y .description p.svelte-12ds5y{margin:0}.pet.svelte-12ds5y .actions.svelte-12ds5y{text-align:right;vertical-align:middle}.pet.svelte-12ds5y .actions span.svelte-12ds5y{background-color:transparent;color:#eee;cursor:pointer;font-size:16px}
+
+/*# sourceMappingURL=bundle.css.map */
