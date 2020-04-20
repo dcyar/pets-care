@@ -2,18 +2,20 @@
 	import { pets } from '../stores.js'
 
 	let name = ''
-	let age = ''
+	let age = 1
 
 	function handleStorePet() {
-		pets.update(p => [
-			{
-				name: name,
-				age: age
-			},
-			...$pets
-		])
-
-		document.querySelector('.form').reset()
+		if (name != '' && age > 0) {
+			pets.update(() => [
+				{
+					name: name,
+					age: age
+				},
+				...$pets
+			])
+			name = ''
+			age = 1
+		}
 	}
 </script>
 
@@ -32,7 +34,9 @@
 			type="text"
 			class="form-control"
 			name="name"
+			minlength="3"
 			bind:value={name}
+			required
 			placeholder="Enter pet name..." />
 		<input
 			type="number"
