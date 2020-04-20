@@ -7,7 +7,7 @@
 	.container {
 		text-align: center;
 		padding: 1em;
-		width: 95vw;
+		width: 90vw;
 	}
 
 	.wrap {
@@ -25,13 +25,16 @@
 		margin: 0;
 	}
 
-	@media (min-width: 640px) {
+	@media (max-width: 980px) {
+		.wrap {
+			grid-template-columns: 1fr;
+		}
 	}
 </style>
 
 <div class="container">
 	<h1>Pets!</h1>
-	<p>Atention of the pets</p>
+	<p>Pet care, wonderful pets and majestic pets</p>
 	<div class="wrap">
 		<Form />
 		<WaitingList />

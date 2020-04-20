@@ -23,20 +23,10 @@
 		background-color: transparent;
 		color: #eee;
 	}
-
-	button {
-		width: 100%;
-		background-color: transparent;
-		color: #eee;
-	}
-
-	button:focus {
-		background-color: #2b0b38;
-	}
 </style>
 
 <div>
-	<h3>Add Pet</h3>
+	<h3>Pet Data</h3>
 	<form action="" class="form" on:submit|preventDefault={handleStorePet}>
 		<input
 			type="text"
@@ -50,9 +40,8 @@
 			name="age"
 			bind:value={age}
 			min="1"
-			max="12"
+			max="24"
 			placeholder="Enter pet age..." />
-		<button type="submit">Save Pet</button>
-		<button type="reset">reset</button>
+		<button type="submit">Add Pet</button>
 	</form>
 </div>
