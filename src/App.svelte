@@ -1,18 +1,20 @@
 <script>
-	export let name;
+	import Form from './components/Form.svelte'
+	import WaitingList from './components/WaitingList.svelte'
 </script>
 
-<main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
-
 <style>
-	main {
+	.container {
 		text-align: center;
 		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
+		width: 95vw;
+	}
+
+	.wrap {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 10px;
+		margin-top: 40px;
 	}
 
 	h1 {
@@ -20,11 +22,18 @@
 		text-transform: uppercase;
 		font-size: 4em;
 		font-weight: 100;
+		margin: 0;
 	}
 
 	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
 	}
 </style>
+
+<div class="container">
+	<h1>Pets!</h1>
+	<p>Atention of the pets</p>
+	<div class="wrap">
+		<Form />
+		<WaitingList />
+	</div>
+</div>
